@@ -1,0 +1,30 @@
+{
+  "name": "vef1-v6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css grid.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch *.scss  styles.css",
+    "dev": "concurrently npm:sass-watch  npm:browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thorvaldurl/vef1-v6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thorvaldurl/vef1-v6/issues"
+  },
+  "homepage": "https://github.com/Thorvaldurl/vef1-v6#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.4.0",
+    "sass": "^1.55.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^28.0.0"
+  }
+}
